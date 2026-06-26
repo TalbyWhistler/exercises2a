@@ -48,6 +48,11 @@ function printButtons(data)
 
 function handleChoiceButton(figure)
 {
+    stepsArray=[];
+    stepCount=0;
+    document.getElementById("headerOutputArea").innerHTML='';
+    document.getElementById("stepsOutputArea").innerHTML='';
+    document.getElementById("nextButtonsOutput").innerHTML='';
     console.log("Handle choice button",figure);    
     let functionName="getData";
     let params={figure:figure};
